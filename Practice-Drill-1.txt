@@ -2,27 +2,20 @@
 
 mkdir hello
 cd hello
-mkdir five
+mkdir five one
 cd five
 mkdir six
 cd six
-touch c.txt
-mkdir seven 
+mkdir c.txt seven
 cd seven
 touch error.log
 cd ../../../
-mkdir one
-ls 
 cd one
-touch a.txt
-touch b.txt
-mkdir two
+mkdir a.txt b.txt two
 cd two
-touch d.txt
-mkdir three
+mkdir d.txt three
 cd three
-touch e.txt
-mkdir four
+mkdir e.txt four
 cd four
 touch access.log
 cd ~
@@ -36,7 +29,7 @@ find . -type f -name "*.log" -exec rm -f {} \;
 3. Add the following content to a.txt
 cd one
 nano a.txt
-added the content then ctrl + o followed by ct rl + x
+added the content then  ctrl + x 
 
 4. Delete the directory named five.
 cd ../
