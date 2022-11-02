@@ -1,0 +1,50 @@
+1. Create the following directory structure. (Create empty files where necessary)
+
+mkdir hello
+cd hello
+mkdir five
+cd five
+mkdir six
+cd six
+touch c.txt
+mkdir seven 
+cd seven
+touch error.log
+cd ../../../
+mkdir one
+ls 
+cd one
+touch a.txt
+touch b.txt
+mkdir two
+cd two
+touch d.txt
+mkdir three
+cd three
+touch e.txt
+mkdir four
+cd four
+touch access.log
+cd ~
+cd hello
+tree
+
+2. Delete all the files having the .log extension
+cd hello
+find . -type f -name "*.log" -exec rm -f {} \;
+
+3. Add the following content to a.txt
+cd one
+nano a.txt
+added the content then ctrl + o followed by ct rl + x
+
+4. Delete the directory named five.
+cd ../
+rm -r five
+
+5. Rename the one directory to uno.
+mv one uno 
+
+ 6. Move a.txt to the two directory.
+cd uno
+mv a.txt two/
